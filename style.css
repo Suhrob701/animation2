@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    align-items: center;
+    background-color: #f8f8f8;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    position: relative;
+    animation: moveBox 10s linear infinite, changeColor 4s linear infinite;
+    
+}
+
+@keyframes moveBox {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    25% {
+        top: 0px;
+        left: 500px;
+    }
+    50% {
+        top: 500px;
+        left: 500px;
+    }
+    75% {
+        top: 500px;
+        left: 0;
+    }
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+
+@keyframes changeColor {
+    0% {
+        background-color: pink;
+    }
+    25% {
+        background-color: lightblue;
+    }
+    50% {
+        background-color: lightgreen;
+    }
+    75% {
+        background-color: yellow;
+    }
+    100% {
+        background-color: pink;
+    }
+}
